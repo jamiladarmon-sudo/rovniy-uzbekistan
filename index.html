@@ -1,261 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>ROVNIY UZBEKISTAN от Миротворца</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Премиальный ROVNIY Uzbekistan от Миротворца. Быстрый переход в официальный Telegram-бот." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chipa Chips Tesla</title>
 
-  <!-- ===================== META PIXEL (Facebook / Instagram) ===================== -->
-  <!-- ЗАМЕНИ YOUR_PIXEL_ID на свой реальный ID пикселя -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID'); // <-- сюда вставь свой Pixel ID
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- =================== КОНЕЦ META PIXEL =================== -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- ===================== GOOGLE ANALYTICS 4 (GA4) ===================== -->
-  <!-- ЗАМЕНИ G-XXXXXXX на свой Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX'); // <-- сюда вставь свой GA4 ID
-  </script>
-  <!-- =================== КОНЕЦ GA4 =================== -->
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1220, #03060f);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    body {
-      min-height: 100vh;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: radial-gradient(circle at top, #2a2a2a 0, #020202 55%, #000 100%);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-    }
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 22px;
+  text-align: center;
+}
 
-    .wrapper {
-      max-width: 480px;
-      width: 100%;
-    }
+/* BRAND */
+.brand h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
 
-    .card {
-      background: rgba(5, 5, 5, 0.92);
-      border-radius: 22px;
-      padding: 30px 22px 24px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      box-shadow: 0 26px 50px rgba(0, 0, 0, 0.9);
-      backdrop-filter: blur(10px);
-    }
+.brand p {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
 
-    .logo-circle {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      margin-bottom: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at 30% 0, #ffe69b 0, #fbbf24 32%, #b7791f 100%);
-      box-shadow: 0 18px 35px rgba(251, 191, 36, 0.6);
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      color: #1a1204;
-    }
+/* GLASS CARD */
+.card {
+  margin-top: 36px;
+  padding: 28px 20px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.13em;
-      opacity: 0.85;
-      margin-bottom: 14px;
-    }
+/* MAIN BUTTON */
+.main-btn {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0b0f1a;
+  text-decoration: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00ff9c, #00d4ff);
+  box-shadow: 0 0 22px rgba(0,255,200,0.45);
+  animation: pulse 2s infinite;
+}
 
-    .badge-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #22c55e;
-      box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
-    }
+@keyframes pulse {
+  0% { box-shadow: 0 0 22px rgba(0,255,200,0.4); }
+  50% { box-shadow: 0 0 38px rgba(0,255,200,0.75); }
+  100% { box-shadow: 0 0 22px rgba(0,255,200,0.4); }
+}
 
-    h1 {
-      font-size: 24px;
-      line-height: 1.25;
-      margin-bottom: 8px;
-    }
+.main-btn:hover {
+  transform: scale(1.02);
+}
 
-    .subtitle {
-      font-size: 14px;
-      opacity: 0.8;
-      margin-bottom: 22px;
-    }
+/* SUBTEXT */
+.subtext {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 26px;
+}
 
-    .highlights {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 22px;
-      font-size: 12px;
-    }
+/* SECOND BUTTON */
+.second-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.5);
+}
 
-    .highlights-item {
-      background: rgba(255, 255, 255, 0.03);
-      border-radius: 14px;
-      padding: 10px 11px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
+.second-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
 
-    .highlights-title {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      opacity: 0.7;
-      margin-bottom: 4px;
-    }
+/* OPERATOR TEXT */
+.operator-text {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-top: 10px;
+  line-height: 1.4;
+}
 
-    .highlights-value {
-      font-size: 13px;
-      font-weight: 500;
-    }
-
-    .cta {
-      margin-bottom: 18px;
-    }
-
-    .cta-button {
-      display: block;
-      width: 100%;
-      text-align: center;
-      border: none;
-      border-radius: 999px;
-      padding: 14px 18px;
-      font-size: 15px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      background: linear-gradient(135deg, #00f5ff, #00ff85);
-      color: #020617;
-      box-shadow: 0 16px 35px rgba(0, 255, 170, 0.45);
-      transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
-    }
-
-    .cta-button span {
-      margin-left: 4px;
-      font-size: 16px;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 20px 45px rgba(0, 255, 170, 0.55);
-      filter: brightness(1.05);
-    }
-
-    .cta-button:active {
-      transform: translateY(0);
-      box-shadow: 0 10px 26px rgba(0, 255, 170, 0.35);
-      filter: brightness(0.97);
-    }
-
-    .note {
-      font-size: 11px;
-      opacity: 0.7;
-      text-align: center;
-      line-height: 1.5;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 12px;
-      font-size: 11px;
-      opacity: 0.55;
-    }
-
-    @media (min-width: 600px) {
-      .card {
-        padding: 34px 26px 26px;
-      }
-      h1 {
-        font-size: 26px;
-      }
-    }
-  </style>
+/* LANGUAGE */
+.lang {
+  margin-top: 36px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+.lang span {
+  margin: 0 6px;
+}
+</style>
 </head>
+
 <body>
-  <div class="wrapper">
-    <div class="card">
-      <div class="logo-circle">R</div>
+<div class="container">
 
-      <div class="badge">
-        <div class="badge-dot"></div>
-        Официальный доступ
-      </div>
+  <div class="brand">
+    <h1>CHIPA CHIPS TESLA ⚡️</h1>
+    <p>
+      Официальная площадка<br>
+      «Ровный Узбекистан» 🇺🇿
+    </p>
+  </div>
 
-      <h1>ROVNIY UZBEKISTAN<br>от Миротворца</h1>
-      <p class="subtitle">
-        Премиальные товары для мужчин по всему Узбекистану. Быстрый и аккуратный сервис через официальный Telegram-бот.
-      </p>
+  <div class="card">
+    <a href="https://t.me/chupachips_uz_bot?start=ads" class="main-btn">
+      🚀 ПЕРЕЙТИ В TELEGRAM-БОТ
+    </a>
 
-      <div class="highlights">
-        <div class="highlights-item">
-          <div class="highlights-title">Формат</div>
-          <div class="highlights-value">Telegram-бот</div>
-        </div>
-        <div class="highlights-item">
-          <div class="highlights-title">Режим</div>
-          <div class="highlights-value">Онлайн 24/7</div>
-        </div>
-      </div>
-
-      <div class="cta">
-        <a
-          class="cta-button"
-          href="https://t.me/ROVNIYuzbek_bot"
-          target="_blank"
-          rel="noopener noreferrer"
-          onclick="gtag('event', 'click_telegram_button'); fbq('track', 'ClickTelegram');"
-        >
-          Перейти в Telegram-бот <span>↗</span>
-        </a>
-      </div>
-
-      <p class="note">
-        Нажимая на кнопку, вы переходите в официальный бот ROVNIY Uzbekistan от Миротворца в Telegram.
-      </p>
+    <div class="subtext">
+      Прикоп / Магнит • Пробники • Чат
     </div>
 
-    <div class="footer">
-      © ROVNIY Uzbekistan. Все права защищены.
+    <a href="https://t.me/tvc24_tash" class="second-btn">
+      💬 Связаться с оператором
+    </a>
+
+    <div class="operator-text">
+      Помощь • Вопросы • Работа 24/7<br>
+      От 1000$ в неделю
     </div>
   </div>
+
+  <div class="lang">
+    🇷🇺 Русский <span>|</span> 🇺🇿 O‘zbekcha
+  </div>
+
+</div>
 </body>
 </html>
-
